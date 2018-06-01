@@ -19,9 +19,42 @@
 		        color: #333;
 			zoom: 2;
 		      }
+		
+		      #info {
+		        width: 10%;
+		        height: 12%;
+		        background: white;
+		        position: absolute;
+		        right: 0;
+		        top: 1%;
+		        text-align: center;
+		      }
         </style>
     </head>
     <body>
+    	<script>
+		window.focus();
+		animals = ['tiger shark', 'sea turtle', 'sea snake', 'manta ray', 'sea eagle', 'whale shark', '11 armed sea star', 'box jellyfish', 'sea urchin', 'abalone', 'clownfish', 'dugong', 'zooplankton', 'phytoplankton', 'sea grass', 'algae'];
+
+
+		function detail() {
+		  search = document.getElementById('search').value;
+		  
+		  if (animals.indexOf(search) > -1) {
+		      window.location = "yassernoori.github.io/organism/" + search + ".html";
+		  } 
+		}       
+	</script>
+	    
+	    
+		<div id="info">
+			<h3>
+				Serach Organism
+			</h3>
+			<input id="search" placeholder="search"><button onclick="detail()">&#x1F50D;Search</button>
+		</div>
+	    
+	    
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
         <div class="w3-display-container">
