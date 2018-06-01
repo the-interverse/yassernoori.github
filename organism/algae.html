@@ -20,34 +20,9 @@
 			zoom: 2;
 		      }
 		
-		      #info {
-			font-size: 16px;
-		        position: absolute;
-		        left: 0;
-		        top: 1%;
-		        text-align: center;
-			color: white;
-		      }
-		
-		     button {
-			width: 25;
-		      }
         </style>
     </head>
     <body>
-    	<script>
-		window.focus();
-		animals = ['tiger shark', 'sea turtle', 'sea snake', 'manta ray', 'sea eagle', 'whale shark', '11 armed sea star', 'box jellyfish', 'sea urchin', 'abalone', 'clownfish', 'dugong', 'zooplankton', 'phytoplankton', 'sea grass', 'algae'];
-
-
-		function detail() {
-		  search = document.getElementById('search').value;
-		  
-		  if (animals.indexOf(search) > -1) {
-		      window.location = "yassernoori.github.io/organism/" + search + ".html";
-		  } 
-		}       
-	</script>
 	    
 	    
 	    
@@ -74,12 +49,7 @@
 		Algae are simple nonflowering plant of a large group that includes the seaweeds and many single-celled forms. Algae contain chlorophyll but lack true stems, roots, leaves, and vascular tissue.
             </p>
         </div>
-		<div id="info">
-			<h3>
-				Serach Organism
-			</h3>
-			<input id="search" placeholder="search"><button onclick="detail()">&#x1F50D;Search</button>
-		</div>
+
         </div>
     </body>
 </html>
