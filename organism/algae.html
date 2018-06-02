@@ -34,7 +34,7 @@
     <body style="font-family:'raleway';zoom:2.75">
         
         <div class="jumbotron text-center">
-            <div class="container" style="backround-image:url('https://i.pinimg.com/originals/92/4d/9e/924d9e26ae3366a5fa3acdfb28dfb48e.jpg')">
+            <div class="container">
                 
                 <button onclick="window.location.href = 'https://yassernoori.github.io'" type="button" class="btn btn-default btn-sm" style="position:absolute; right: 5%; top:10%">
                         <span class="fa fa-home"></span> Home
@@ -58,7 +58,9 @@
                 
             </div>
         </div>
-
+	    
+	<img style="display:none" id="img" src="https://i.pinimg.com/originals/92/4d/9e/924d9e26ae3366a5fa3acdfb28dfb48e.jpg">
+	    
         <div class="container">
             <h4>
                 A L G A E
@@ -69,6 +71,18 @@
                 Algae are simple nonflowering plant of a large group that includes the seaweeds and many single-celled forms. Algae contain chlorophyll but lack true stems, roots, leaves, and vascular tissue.
             </p>
         </div>
-        
+        <script>
+	var txt = document.getElementById('txt');
+	var img = document.getElementById('image');
+		
+        txt.onmouseover = function() {
+                img.style.display = "block";
+        }
+		
+        txt.onmouseout = function() {
+                img.style.display = "none";
+        }
+		
+	</script>
     </body>
 </html>
