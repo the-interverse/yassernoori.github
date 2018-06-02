@@ -15,6 +15,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
         
+        <script>
+		window.focus();
+		animals = ['tiger shark', 'sea turtle', 'sea snake', 'manta ray', 'sea eagle', 'whale shark', '11 armed sea star', 'box jellyfish', 'sea urchin', 'abalone', 'clownfish', 'dugong', 'zooplankton', 'phytoplankton', 'sea grass', 'algae'];
+		function detail() {
+		  search = document.getElementById('search').value;
+		  
+		  if (animals.indexOf(search) > -1) {
+			window.location = "https://yassernoori.github.io/organism/" + search + ".html";
+		  } 
+		}       
+		</script>
+        
     </head>
     
     <body style="font-family:'raleway';zoom:2.75">
@@ -25,6 +37,11 @@
                 <button onclick="window.location.href = 'https://yassernoori.github.io'" type="button" class="btn btn-default btn-sm" style="position:absolute; left: 5%">
                         <span class="fa fa-home"></span> Home
                 </button>
+                
+		    	<input id="search" placeholder="search" type="button" class="btn btn-default btn-sm">
+                     <button onclick="detail()">
+                         <i class="material-icons">search</i>Search
+                     </button>
                 
                 <h1>
                     
