@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>
+            11 ARMED SEA STAR
+        </title>
+        
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <script>
+		window.focus();
+		animals = ['tiger shark', 'sea turtle', 'sea snake', 'manta ray', 'sea eagle', 'whale shark', '11 armed sea star', 'box jellyfish', 'sea urchin', 'abalone', 'clownfish', 'dugong', 'zooplankton', 'phytoplankton', 'sea grass', 'algae'];
+		function detail() {
+		  search = document.getElementById('search').value;
+		  
+		  if (animals.indexOf(search) > -1) {
+			window.location = "https://yassernoori.github.io/organism/" + search + ".html";
+		  } 
+		}       
+		</script>
+        
+    </head>
+    
+    <body style="font-family:'raleway';zoom:2.75">
+        
+        <div class="jumbotron text-center">
+            <div" class="container">
+                
+                <button onclick="window.location.href = 'https://yassernoori.github.io'" type="button" class="btn btn-default btn-sm" style="position:absolute;top:10%;left: 5%">
+                        <span class="fa fa-home"></span> Home
+                </button>
+                
+		    <div style="position:absolute; right: 5%">
+			<input style="border:none;width:100px;height:23px" id="search" placeholder=" organism">
+                     	<button type="button" class="btn btn-default btn-sm" onclick="detail()">
+                        	 Search
+                        </button>
+		    </div>
+                
+                <h1 style="letter-spacing: 3px">
+                    
+                    11 ARMED SEA STAR
+                </h1>
 
+                <p>
+		    <span style="letter-spacing: 3px">SECONDARY CONSUMER</span>
+		    <br />
+		    <i style="font-size:10px;color:#7992ab">By Yasser Noori</i>
+                </p>
+                
+            </div>
+        </div>
+	    
+        <div style="font-family:'raleway'" class="container">
+
+            <p style="padding-right:175px;font-size: 12px">
+                <br />
+                The Eleven-armed Sea Star is the largest species of sea star in Sydney and is commonly seen at low-tide levels, either on the rocky shore or in sandy bays.
+						<br />  The upper surface of the Eleven-armed Sea Star is covered in small spines.The number of arms varies from seven to 14 but, as the name suggests, it is usually found with 11 arms. <br/><br/><button class="btn btn-default btn-sm" onclick="show()">Show Image</button>
+	
+	    </p>
+<img style="visibility:hidden" id="img1" src="http://www.mesa.edu.au/echinoderms/gallery/sea_star_11_arm.jpg">
+        </div>
+
+
+<script type = "text/javascript">
+function show() {
+    document.getElementById('img1').style.visibility = 'visible';
+}
+</script>
+    </body>
+</html>
